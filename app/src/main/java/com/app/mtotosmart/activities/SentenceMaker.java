@@ -26,8 +26,10 @@ import java.util.Arrays;
 public class SentenceMaker extends BaseActivity {
     ActivitySentenceMakerBinding binding;
     private TextView selectedSubject, selectedVerb;
-    private boolean isStepSubject = true, isStepVerb = false;
+    private boolean isStepSubject = true, isStepVerb = false, isContinue = false;
     MediaPlayer mp;
+    Handler handler;
+    Runnable runnable;
 
     private String[][] table1 = {
             {"He", "am", "cleaning the toilet"},
@@ -135,6 +137,12 @@ public class SentenceMaker extends BaseActivity {
         tool.disableBt(binding.btPre);
         addTableHeader();
         buildTable(table1);
+        handler = new Handler();
+        runnable = () -> {
+            if (!isContinue){
+                binding.btReset.performClick();
+            }
+        };
     }
 
     private void addTableHeader() {
@@ -208,10 +216,13 @@ public class SentenceMaker extends BaseActivity {
                     if (text.isEmpty()) return false;
 
                     if (column == 0 && isStepSubject) {
+                        isContinue = false;
                         selectedSubject = touchedView;
                         binding.connectionView.startLine(centerX, centerY);
+                        handler.postDelayed(runnable, 5000);
                         return true;
                     } else if (column == 1 && isStepVerb) {
+                        isContinue = true;
                         selectedVerb = touchedView;
                         binding.connectionView.startLine(centerX, centerY);
                         return true;
@@ -236,6 +247,7 @@ public class SentenceMaker extends BaseActivity {
                             binding.btReset.setVisibility(View.VISIBLE);
                             binding.connectionView.endLine(tx, ty, true);
                         } else if (column == 1 && isStepVerb) {
+                            handler.removeCallbacks(runnable);
                             isStepVerb = false;
                             binding.connectionView.endLine(tx, ty, true);
 
@@ -245,7 +257,6 @@ public class SentenceMaker extends BaseActivity {
                             if (exists) {
                                 mp = MediaPlayer.create(this, R.raw.success);
                                 binding.sentenceText.setText(sentence+" ✅");
-                                Log.e("TAG", "setTouchLogic: "+((TextView) target).getText().toString().replace(" ", "_") );
                                 if (selectedSubject.getText().toString().equals("He")){
                                     loadVd(getResources().getIdentifier(((TextView) target).getText().toString().replace(" ", "_")+"_b", "raw", getPackageName()));
                                 }else if (selectedSubject.getText().toString().equals("She")){

@@ -30,8 +30,10 @@ public class ConnectionView extends View {
 
     private void init() {
         paint.setColor(Color.parseColor("#47AAF4"));
-        paint.setStrokeWidth(8);
+        paint.setStrokeWidth(4);
         paint.setAntiAlias(true);
+        paint.setStrokeCap(Paint.Cap.ROUND);
+        paint.setStrokeJoin(Paint.Join.ROUND);
     }
 
     public void startLine(float x, float y) {

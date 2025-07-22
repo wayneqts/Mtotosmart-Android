@@ -67,6 +67,7 @@
     <string name="back">Back</string>
     <string name="pls_click_back_again_to_exit">Please click back again to exit</string>
     <string name="sentence_maker">Sentence Maker</string>
+    <string name="sentence_des">Instruction: Drag to connect words from each box in the table to make a sentence.</string>
 
     <string-array name="verbs">
         <item>Bow</item>
