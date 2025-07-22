@@ -1,0 +1,2 @@
+alias: mtotosmartkey
+pw: Mtotosmart@?

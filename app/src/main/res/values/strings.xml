@@ -1,0 +1,149 @@
+<resources>
+    <string name="app_name">Mtotosmart</string>
+    <string name="colors">Colors</string>
+    <string name="matching_items">Matching Items</string>
+    <string name="shapes">Shapes</string>
+    <string name="fruits">Fruits</string>
+    <string name="domestic_nanimal">Domestic\nAnimal</string>
+    <string name="domestic_nanimal1">Domestic Animal</string>
+    <string name="numbers">Numbers</string>
+    <string name="my_profile">My Profile</string>
+    <string name="choose_a_friend">Choose A Friend</string>
+    <string name="gudo">Gudo</string>
+    <string name="roza">Roza</string>
+    <string name="choose_age_group">Choose Age Group</string>
+    <string name="_03_05">03-05</string>
+    <string name="_06_12">06-12</string>
+    <string name="your_name">Your Name</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="save">Save</string>
+    <string name="your_name_required">Your name is required</string>
+    <string name="wild_animals">Wild Animals</string>
+    <string name="about">About</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="term_of_services">Term of Services</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="share_app">Share App</string>
+    <string name="version">Version:</string>
+    <string name="spelling">Spelling</string>
+    <string name="a">a</string>
+    <string name="b">b</string>
+    <string name="c">c</string>
+    <string name="d">d</string>
+    <string name="e">e</string>
+    <string name="f">f</string>
+    <string name="g">g</string>
+    <string name="h">h</string>
+    <string name="i">i</string>
+    <string name="j">j</string>
+    <string name="k">k</string>
+    <string name="l">l</string>
+    <string name="m">m</string>
+    <string name="n">n</string>
+    <string name="o">o</string>
+    <string name="p">p</string>
+    <string name="u">u</string>
+    <string name="t">t</string>
+    <string name="s">s</string>
+    <string name="r">r</string>
+    <string name="q">q</string>
+    <string name="z">z</string>
+    <string name="y">y</string>
+    <string name="x">x</string>
+    <string name="w">w</string>
+    <string name="v">v</string>
+    <string name="congratulation">Congratulation!</string>
+    <string name="ok">Ok</string>
+    <string name="you_ve_completed_all_the_spelling_questions">You\'ve completed all the spelling questions</string>
+    <string name="alphabets">Alphabets</string>
+    <string name="verbs">Verbs</string>
+    <string name="coloring">Coloring</string>
+    <string name="parts_of_the_body">Parts of the body</string>
+    <string name="select_photo">Select Photo</string>
+    <string name="gallery">Gallery</string>
+    <string name="more">More</string>
+    <string name="back">Back</string>
+    <string name="pls_click_back_again_to_exit">Please click back again to exit</string>
+    <string name="sentence_maker">Sentence Maker</string>
+
+    <string-array name="verbs">
+        <item>Bow</item>
+        <item>Crawl</item>
+        <item>Cry</item>
+        <item>Dance</item>
+        <item>Drink</item>
+        <item>Jump</item>
+        <item>Kick</item>
+        <item>Pull</item>
+        <item>Push</item>
+        <item>Read</item>
+        <item>Roll</item>
+        <item> </item>
+    </string-array>
+    <string-array name="verbs_more">
+        <item>Run</item>
+        <item>Sing</item>
+        <item>Sit</item>
+        <item>Slide</item>
+        <item>Laugh</item>
+        <item>Think</item>
+        <item>Walk</item>
+        <item>Wave</item>
+        <item> </item>
+    </string-array>
+    <string-array name="body">
+        <item>Head</item>
+        <item>Neck</item>
+        <item>Shoulders</item>
+        <item>Chest</item>
+        <item>Hair</item>
+        <item>Arms</item>
+        <item>Knees</item>
+        <item>Toes</item>
+        <item>Eyes</item>
+        <item>Nose</item>
+        <item>Ears</item>
+        <item> </item>
+    </string-array>
+    <string-array name="body_more">
+        <item>Mouth</item>
+        <item>Tongue</item>
+        <item>Teeth</item>
+        <item>Fingers</item>
+        <item>Elbow</item>
+        <item>Face</item>
+        <item>Waist</item>
+        <item>Chin</item>
+        <item> </item>
+    </string-array>
+    <string-array name="alphabets">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+    </string-array>
+</resources>
